@@ -1,0 +1,11 @@
+<div class="container form my-5">
+  <h1>Create a new movie list</h1>
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <div class='d-flex justify-content-between pt-4'>
+      <p class='m-0'><%= link_to "Back to lists", lists_path, class: "btn btn-secondary" %></p>
+      <p class='m-0'><%= f.submit "Create list", class: "btn btn-primary" %></p>
+    </div>
+  <% end %>
+  <br>
+</div>
