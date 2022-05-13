@@ -11,7 +11,7 @@ class BookmarksController < ApplicationController
     if @bookmark.save
       redirect_to list_path(@list)
     else
-      render 'lists/show'
+      render :new
     end
   end
 
