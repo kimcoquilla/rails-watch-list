@@ -12,6 +12,11 @@
 <% @lists.each do |list| %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tricycle.org/wp-content/uploads/2005/06/peter-lewicki-411606-unsplash-FOR-WEB.jpg)">
     <h3><%= link_to list.name, list_path(list) %></h3>
+    <div class="topright">
+    <%= link_to list_path(list), method: :delete, data: {confirm: 'Are you sure you want to delete this list?'} do %>
+    <i class="fa-solid fa-trash-can"></i>
+    <% end %>
+    </div>
   </div>
 <% end %>
 </div>
