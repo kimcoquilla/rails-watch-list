@@ -52,13 +52,12 @@
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: #e3f2fd;
   margin: 0px;
-  padding: 70px 200px;
   width:100%;
-  height: 200px;
+  height: fit-content;
   color: gray;
   text-align: center;
 }
